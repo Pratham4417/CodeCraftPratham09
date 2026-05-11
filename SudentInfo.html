@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Registration Form </title>
+</head>
+<style>
+body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: green;
+        }
+</style>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+Name:<input type="text" name="name"><br><br>
+
+Email:<input type = "text" Email="email"><br><br>
+
+Gender:<input type="radio" name="gender" value="male">Male
+               <input type="radio" name="gender" value="female">Female <br><br>
+
+DOB:<input type= "date" name="DOB"><br><br>
+
+<input type = "submit" value="Submit">
+
+</form>
+</body>
+</html>

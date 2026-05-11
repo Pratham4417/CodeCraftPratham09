@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator Program</title>
+</head>
+<body>
+
+<script>
+
+function Calculator(num1, num2, operator) {
+
+    switch(operator) {
+
+        case '+':
+            return num1 + num2;
+
+        case '-':
+            return num1 - num2;
+
+        case '*':
+            return num1 * num2;
+
+        case '/':
+            return num1 / num2;
+
+        default:
+            return "Invalid Operation";
+    }
+}
+
+// User Input
+let num1 = parseFloat(prompt("Enter First Number:"));
+let num2 = parseFloat(prompt("Enter Second Number:"));
+let operator = prompt("Enter Operator (+,-,*,/):");
+
+// Function Call
+let Result = Calculator(num1, num2, operator);
+
+// Display Result
+document.write("<h3>Result = " + Result + "</h3>");
+
+</script>
+
+</body>
+</html>
